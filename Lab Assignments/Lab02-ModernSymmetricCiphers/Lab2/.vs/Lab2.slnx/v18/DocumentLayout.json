@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task6_invperm.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task6_invperm.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task5_pbox.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task5_pbox.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task4_rotate.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task4_rotate.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task3_swap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task3_swap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task2_combine.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task2_combine.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task1_split.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:task1_split.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2EEB2D9C-BE38-4B1D-84DD-1E46A146B51D}|Lab2.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "utils.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\utils.c",
+              "RelativeDocumentMoniker": "utils.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\utils.c",
+              "RelativeToolTip": "utils.c",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T03:02:10.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "task6_invperm.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task6_invperm.c",
+              "RelativeDocumentMoniker": "task6_invperm.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task6_invperm.c",
+              "RelativeToolTip": "task6_invperm.c",
+              "ViewState": "AgIAACkAAAAAAAAAAAAmwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:59:40.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "task5_pbox.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task5_pbox.c",
+              "RelativeDocumentMoniker": "task5_pbox.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task5_pbox.c",
+              "RelativeToolTip": "task5_pbox.c",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:58:50.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "task4_rotate.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task4_rotate.c",
+              "RelativeDocumentMoniker": "task4_rotate.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task4_rotate.c",
+              "RelativeToolTip": "task4_rotate.c",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAmwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:56:32.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "task3_swap.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task3_swap.c",
+              "RelativeDocumentMoniker": "task3_swap.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task3_swap.c",
+              "RelativeToolTip": "task3_swap.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:55:35.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "task2_combine.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task2_combine.c",
+              "RelativeDocumentMoniker": "task2_combine.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task2_combine.c",
+              "RelativeToolTip": "task2_combine.c",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:53:25.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "task1_split.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task1_split.c",
+              "RelativeDocumentMoniker": "task1_split.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\task1_split.c",
+              "RelativeToolTip": "task1_split.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T02:51:15.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\Joel\\source\\repos\\CYBR463-AppliedCryptography\\Lab02-ModernSymmetricCiphers\\Lab2\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-24T01:33:39.395Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

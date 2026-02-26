@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBR 463 Secure Chat</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; margin: 0; background-color: #f0f2f5; }
+        #chat-container { flex: 2; display: flex; flex-direction: column; padding: 20px; border-right: 1px solid #ddd; background: white; }
+        #messages { flex-grow: 1; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; overflow-y: auto; margin-bottom: 15px; background: #fafafa; display: flex; flex-direction: column; }
+        
+        .message-bubble { 
+            margin-bottom: 10px; padding: 10px 15px; border-radius: 18px; color: white; 
+            align-self: flex-start; max-width: 80%; word-wrap: break-word;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: 500;
+        }
+        
+        .controls { display: flex; gap: 10px; }
+        input { flex-grow: 1; padding: 10px; border: 1px solid #ccc; border-radius: 20px; outline: none; }
+        button { padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #218838; }
+
+        #log-panel { flex: 1; background-color: #2c3e50; color: #ecf0f1; padding: 20px; overflow-y: auto; }
+        .log-item { background: #34495e; padding: 10px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #3498db; font-family: monospace; font-size: 0.85em; }
+        .pass { color: #2ecc71; font-weight: bold; }
+        small { display: block; word-break: break-all; margin-top: 4px; color: #bdc3c7; }
+    </style>
+</head>
+<body>
+
+    <div id="chat-container">
+        <h2>Secure Chat Interface</h2>
+        <div id="messages"></div>
+        <div class="controls">
+            <input type="text" id="message-input" placeholder="Type a secure message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <div id="log-panel">
+        <h3>Cryptographic Logging Panel</h3>
+        <div id="crypto-logs">
+            <p style="color: #95a5a6;"><i>Initializing handshake...</i></p>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+
+        // Consistent Color Generator based on User SID
+        function getIDColor(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            const c = (hash & 0x00FFFFFF).toString(16).toUpperCase();
+            return "#" + "00000".substring(0, 6 - c.length) + c;
+        }
+
+        // 1. Trigger DH Handshake [cite: 37, 46, 73]
+        socket.on('connect', () => {
+            console.log("Connected. SID:", socket.id);
+            socket.emit('key_exchange', { trigger: "start" });
+        });
+
+        socket.on('key_exchange_response', (data) => {
+            const logDiv = document.getElementById('crypto-logs');
+            logDiv.innerHTML = '<div class="log-item"><b>Handshake Complete</b><br>Shared Secret (AES Key) established via Diffie-Hellman modules.</div>';
+        });
+
+        // 2. Broadcasting Messages with Color Coding [cite: 38]
+        socket.on('chat_broadcast', (data) => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message-bubble';
+            msgDiv.style.backgroundColor = getIDColor(data.user);
+            msgDiv.textContent = `${data.user.substring(0,5)}: ${data.msg}`;
+            document.getElementById('messages').appendChild(msgDiv);
+            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+        });
+
+        // 3. Update Logging Panel [cite: 52, 53, 76]
+        socket.on('log_update', (data) => {
+            const logDiv = document.getElementById('crypto-logs');
+            const logEntry = `
+                <div class="log-item">
+                    <p><b>AES Encrypted Message:</b><small>${data.encrypted_blob}</small></p>
+                    <p><b>Raw RSA Signature:</b><small>${data.rsa_signature}</small></p>
+                    <p><b>HMAC Status:</b> <span class="pass">${data.hmac_status}</span></p>
+                    <p><b>Decrypted Plaintext:</b><br><span style="color: #f1c40f;">${data.decrypted_text}</span></p>
+                </div>
+            `;
+            logDiv.insertAdjacentHTML('afterbegin', logEntry);
+        });
+
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const message = input.value;
+            if (!message) return;
+
+            socket.emit('message', { payload: message });
+            input.value = '';
+        }
+
+        document.getElementById('message-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
+</body>
+</html>

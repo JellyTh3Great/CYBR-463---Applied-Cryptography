@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a1b2d680-5663-4c2a-b9f0-8f1777cf5a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d6c8b55e-be33-4434-9e8b-5d01c96c1a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{51bf19b9-e59f-448c-a9fd-9581a1acc8f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="affine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atbash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="caesar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playfair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_affine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_atbash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_caesar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_vigenere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vigenere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_playfair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_hill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="affine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atbash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="caesar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playfair.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vigenere.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_vigenere.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_playfair.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_hill.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_caesar.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_atbash.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_affine.c">
+      <Filter>Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
